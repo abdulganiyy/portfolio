@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 18px;
+
+  &--flex {
+    @include atTablet {
+      display: flex;
+    }
+  }
+
+  &--flex-reverse {
+    @include atTablet {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--flex-end {
+    @include atTablet {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

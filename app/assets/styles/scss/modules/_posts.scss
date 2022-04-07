@@ -1,0 +1,23 @@
+.posts {
+  background-color: #edf7fa;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #00a8cc;
+  }
+
+  &__list {
+    margin-top: 1rem;
+    @include atLaptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px;
+      gap: 1rem;
+    }
+  }
+}

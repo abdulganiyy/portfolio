@@ -1,0 +1,54 @@
+.about-me {
+  &__content {
+    @include atTablet {
+      flex: 2;
+    }
+  }
+
+  &__img-box-container {
+    margin-bottom: 1rem;
+    @include atTablet {
+      flex: 1;
+    }
+  }
+  &__img-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #edf7fa;
+      left: -5px;
+      top: 8px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243d;
+  }
+
+  &__description {
+    max-width: 497px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243d;
+    margin-bottom: 1.5rem;
+  }
+}

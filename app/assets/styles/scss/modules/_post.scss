@@ -1,0 +1,22 @@
+.post {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  @include atLaptop {
+    margin: 0;
+  }
+
+  &__content-secondary {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  &__time-created {
+    display: inline-block;
+    padding-right: 1.5rem;
+    border-right: 1px solid black;
+    height: 1.4rem;
+    margin-right: 1rem;
+  }
+}
