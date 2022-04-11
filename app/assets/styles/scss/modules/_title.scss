@@ -1,4 +1,9 @@
 .title {
-  color: $primaryColor;
+  color: $primaryTextColor;
   font-size: 4rem;
+
+  &--small {
+    font-size: 1.375rem;
+    margin-bottom: 0.5rem;
+  }
 }
